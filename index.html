@@ -3,35 +3,93 @@
 <head>
 	<title>myApp Dashboard</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- 	<div class="jumbotron jumbotron-fluid">
-		<div class="container justify-content-center">
-			<h1 class="display-1">appDashboard</h1>
-			<p class="lead">testing</p>
-		</div>
-	</div> -->
 	<h1 class="display-1 text-center">appDashboard</h1>
+	<div class="container-fluid border bg-outline-dark">
+	<!-- Main Navigation -->
 	<nav >
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-pills">
 			<li class="nav-item">
-				<a href="#" class="nav-link">Ticketing</a>
+				<a href="#ticketing" data-toggle="tab"class="nav-link active">Ticketing</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Monitoring</a>
+				<a href="#monitoring" data-toggle="tab"class="nav-link">Monitoring</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Link1</a>
+				<a href="#highsev" data-toggle="tab"class="nav-link">High Sev</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Link1</a>
+				<a href="#" data-toggle="tab"class="nav-link">Link1</a>
 			</li>
+			<div class="ml-auto">
 			<li class="nav-item">
-				<a href="#" class="nav-link">Link1</a>
+				Access List
 			</li>
+		</div>
 		</ul>
 	</nav>
-	<div class="card">
+		<!-- GRID 10 to 2 -->
+		<div class="row border">
+			<!-- Main Tab Container -->
+			<div class="col-md-10 tab-content">
+				<!-- Ticketing tab navigation -->
+				<div id="ticketing" class="container-fluid border tab-pane fade active show in">
+					<ul class="nav nav-tabs ">
+						<li class="nav-item">
+							<a class="nav-link active"data-toggle="tab" href="#known-issues">Known Issues</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"data-toggle="tab"href="#defects">Defects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"data-toggle="tab"href="#shift-log">Shift Log</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"data-toggle="tab"href="#profiling">Profiling</a>
+						</li>
+					</ul>
+						<!-- Ticketing tab content -->
+						<div class="tab-content">
+							<div id="known-issues" class="tab-pane fade active show in">
+							<h3>Known Issues</h3>
+							<ul class="nav nav-tabs">
+								<li class="nav-item">
+									<a href="" class="nav-link active small">MSS</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link active small">RIS</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link active small">RTS</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link active small">OST</a>
+								</li>
+							</ul>
+							</div>
+							<div id="shift-log" class="tab-pane fade">
+							<h3>Shift Log</h3>
+					
+							</div>
+							<div id="profiling" class="tab-pane fade">
+								<h3>Profiling</h3>
+						
+							</div>
+							<div id="defects" class="tab-pane fade">
+								<h3>Defects</h3>
+						
+							</div>
+						</div>
+				</div>
+				<!-- Monitoring Tab -->
+				<div id="monitoring" class="tab-pane fade">
+					<div class="display1">wazah</div>
+				</div>
+		</div>
+<!-- 	<div class="card">
 		<div class="class-header">
 			<ul class="nav nav-tabs card-header-tabs">
 				<li class="nav-item">
@@ -54,10 +112,26 @@
 			<small class="text-muted">Footer</small>
 		</div>
 	</div>
-
+	</div> -->
+	<div class="col-md-2">
+			<h5>Useful links</h3>
+			<div class="list-group">
+				<a href="#"class="list-group-item small">hello</a>
+				<a href="#"class="list-group-item small">hello</a>
+				<a href="#"class="list-group-item small">hello</a>
+				<a href="#"class="list-group-item small">hello</a>
+				<a href="#"class="list-group-item small">hello</a>
+			</div>	
+	
+		
+	</div>
+</div>
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script text="text/javascript" src="script.js"></script>
+
 
 </body>
 </html>
